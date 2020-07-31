@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>New Expediente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+        <body>
+        <h1>Nuevo Expediente</h1>
+        <br>
+            
+        <form action="ExpedienteServlet" method="get">
+            Paciente_IdPaciente:<br>
+            <input type="text" id="idPatient" name="Paciente_idpaciente" />
+            <br><br>
+            Id Servicio medico: <br>
+            <input type="number" id="idMedicServices" name="idServicioMedico" />
+            <br><br>
+            Fecha de ingreso: <br>
+            <input type="number" id="EntryDate" name="fechaIngreso" />
+            <br><br>
+            Fecha de alta: <br>
+            <input type="number" id="DepartureDate" name="fechaAlta" />
+            <br><br>
+            <input type="submit" value="Send" />
+            <input type="hidden" name="formid" value="1" />
+        </form>
+        <br>
+        <a href="expedienteMain.html">Regresar</a>
+    </body>
+</html>

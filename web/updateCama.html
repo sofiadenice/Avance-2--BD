@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Update Cama</title>
+    </head>
+
+    <body>
+        <h1>Update Cama</h1>
+        <br>
+          <form action="CamaServlet" method="get">
+            Paciente_IdPaciente:<br>
+            <input type="number" id="idPaciente" name="Cama de Paciente"/>
+            <br>
+            <br>
+            Número de cama:<br>
+            <input type="number" id="BedNumber" name="numeroCama" />
+            <br><br>
+            <input type="submit" value="Send" />
+            <input type="hidden" name="formid" value="5" />
+            <input type="hidden" name="id" value="<%= classroomObj.getId() %>"/>
+        </form>
+        <br>
+        <a href="camaMain.html">Regresar</a>
+    </body>
+
+
