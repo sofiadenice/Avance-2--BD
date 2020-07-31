@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Update Expediente</title>
+    </head>
+
+    <body>
+        <h1>Update Expediente</h1>
+        <br>
+          <form action="ExpedienteServlet" method="get">
+            Paciente_IdPaciente:<br>
+            <input type="text" id="idPatient" name="Paciente_idpaciente" />
+            <br><br>
+            Id Servicio medico: <br>
+            <input type="number" id="idMedicServices" name="idServicioMedico" />
+            <br><br>
+            Fecha de ingreso: <br>
+            <input type="number" id="EntryDate" name="fechaIngreso" />
+            <br><br>
+            Fecha de alta: <br>
+            <input type="number" id="DepartureDate" name="fechaAlta" />
+            <br><br>
+            <input type="submit" value="Send" />
+            <input type="hidden" name="formid" value="5" />
+            <input type="hidden" name="id" value="<%= classroomObj.getId() %>"/>
+        </form>
+        <br>
+        <a href="servicioMedicoMain.html">Regresar</a>
+    </body>
+
+

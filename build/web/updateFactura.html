@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+     <body>
+        <h1>Update Factura</h1>
+        <br>
+        <form action="FacturaServlet" method="get">
+            Id Paciente:
+            <br>
+            <input type="number" id="idPatient" name="Id Paciente" />
+            <br><br>
+            Fecha de emision:
+            <br>
+            <input type="number" id="fecha" name="fecha" />
+            <br><br>
+            Hora de emision: 
+            <br>
+            <input type="number" id="hora" name="hora" />
+            <br><br>
+            Correlativo:
+            <br>
+            <input type="number" id="correlativo" name="Correlativo" />
+            <br><br>
+            Id Tratamiento:
+            <br>
+            <input type="number" id="idTratamiento" name="Id Tratamiento" />
+            <br><br>
+            Total:
+            <br>
+            <input type="number" id="total" name="Total" />
+            <br><br>
+            <input type="submit" value="Send" />
+            <input type="hidden" name="formid" value="5" />
+            <input type="hidden" name="id" value="<%= classroomObj.getId() %>"/>
+        </form>
+        <br>
+        <a href="facturaMain.html">regresar</a>
+    </body>
+</html>

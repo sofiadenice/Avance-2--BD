@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Update Paciente</title>
+    </head>
+
+    <body>
+        <h1>Update Paciente</h1>
+        <br>
+         <form action="PacienteServlet" method="get">
+            Id Paciente:<br>
+            <input type="int" id="idPatient" name="Id Paciente" />
+            <br><br>
+            Nombre:<br>
+            <input type="text" id="name" name="Nombre" />
+            <br><br>
+            Apellido: <br>
+            <input type="text" id="lastName" name="Apellido" />
+            <br><br>
+            Sexo: <br>
+            <input type="text" id="sex" name="Sexo" />
+            <br><br>
+            Edad: <br>
+            <input type="number" id="age" name="Edad" />
+            <br><br>
+            Direccion: <br>
+            <input type="text" id="adress" name="Direccion" />
+            <br><br>
+            Contacto: <br>
+            <input type="number" id="contact" name="Contacto" />
+            <br><br>
+            <input type="submit" value="Send" />
+            <input type="hidden" name="formid" value="5" />
+            <input type="hidden" name="id" value="<%= classroomObj.getId() %>"/>
+        </form>
+        <br>
+        <a href="pacienteMain.html">Regresar</a>
+    </body>
+
